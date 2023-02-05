@@ -16,7 +16,7 @@ export class VideoList extends Component {
     
     render() {
         const { videos } = this.state
-        if (videos === null) return <h2>Loading...</h2>
+        if (videos === null) return <h2>Loading ...</h2>
 
         return (
             <>
