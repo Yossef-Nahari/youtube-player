@@ -7,9 +7,11 @@ export function YoutubePlayer() {
     return (
         <>
             <main className="index-layout">
-                <MainVideo />
-                <SongList />
                 <SearchBar />
+                <div className="videos-content">
+                    <SongList />
+                    <MainVideo />
+                </div>
             </main>
         </>
     )

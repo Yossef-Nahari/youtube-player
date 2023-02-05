@@ -1,8 +1,10 @@
 
+// import TextField from "@mui/material/TextField";
 
 export function MainVideo() {
 
     return (
-        <h1>Main-video</h1>
+        <section className="main-video">
+        </section>
     )
 }
