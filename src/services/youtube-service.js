@@ -11,14 +11,11 @@ const KEY = 'videosDB'
 let currVideosList = [] 
 
 async function onSearch(video) {
-    console.log('Hello')
-    console.log('video', video)
+
     try {
         const videos = await getSongs(video)
         if (!videos.length) return
-        console.log('videos', videos)
         currVideosList = videos
-        console.log('currVideosList', currVideosList)
         // renderVideos(videos)
         // playVideo(videos[0].id)
     }
@@ -57,8 +54,9 @@ async function getSongs(video) {
 }
 
 function renderVideos() {
-    console.log('loggg', currVideosList)
-    return currVideosList
+    const data=Object.values(storageService.load(KEY))
+    if (!data) return
+    return data[data.length-1] 
 }
 
 
