@@ -1,0 +1,42 @@
+// /* Breakpoint mixins */
+
+
+// Main
+@mixin for-mobile-layout {
+    @media (min-width: $brake-point-s) {
+        @content;
+    }
+}
+
+@mixin for-tablet-layout {
+    @media (min-width: $brake-point-m) {
+        @content;
+    }
+}
+
+@mixin for-wide-layout {
+    @media (min-width: $brake-point-l) {
+        @content;
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@mixin bold300 {
+    font-weight: 300;
+
+}
+@mixin bold500 {
+    font-weight: 500;
+
+}
+@mixin bold700 {
+    font-weight: 700;
+
+}

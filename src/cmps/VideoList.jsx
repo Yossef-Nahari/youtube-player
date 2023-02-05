@@ -26,7 +26,7 @@ export class VideoList extends Component {
                                     <div key={video.title + idx}>
                                         <img src={video.img.url} alt="" />
                                         <h2>{video.title}</h2>
-                                        <h3>'Song desc'</h3>
+                                        <h2>{video.description}</h2>
                                         <h3>'Song votes'</h3>
                                         <button>Play</button>
                                     </div>

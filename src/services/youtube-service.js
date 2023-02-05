@@ -35,9 +35,11 @@ async function getSongs(video) {
     try {
         res = await axios.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&videoEmbeddable=true&type=video&key=AIzaSyCp8KMTEjR9frWUGpSnc8Cw5cLVe7wRRDM&q=${video}`)
         const ytVideos = res.data.items
+        console.log('info', ytVideos)
         const videos = ytVideos.map(ytVideo => ({
             id: ytVideo.id.videoId,
             title: ytVideo.snippet.title,
+            description: ytVideo.snippet.description,
             img: {
                 url: ytVideo.snippet.thumbnails.default.url,
                 width: ytVideo.snippet.thumbnails.default.width,

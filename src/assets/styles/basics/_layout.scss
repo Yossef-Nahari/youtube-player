@@ -1,0 +1,35 @@
+.index-layout {
+  display: grid;
+
+  >* {
+    grid-column: 2;
+
+    &.full {
+      grid-column: 1 /-1;
+    }
+
+
+  }
+
+  grid-template-columns: minmax($pad-8, 1fr)  $main-content-wide-s minmax($pad-8,
+    1fr);
+  background-color: orangered;
+
+  @include for-tablet-layout {
+    grid-template-columns: minmax($pad-24, 1fr) minmax(auto, $main-content-wide-m) minmax($pad-24,
+        1fr);
+    background-color: red;
+  }
+
+  @include for-wide-layout {
+    grid-template-columns: minmax($pad-24, 1fr) minmax(auto, $main-content-wide-l) minmax($pad-24,
+        1fr);
+    background-color: yellow;
+  }
+
+  // @include for-wide-layout {
+  //   grid-template-columns:
+  //     // minmax($pad-40,1fr) minmax($x-large-breakpoint, 1700px) minmax($pad-40,1fr);
+  //     80px minmax($x-large-breakpoint, auto) 80px;
+  // }
+}
