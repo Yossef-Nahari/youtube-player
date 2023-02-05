@@ -1,0 +1,42 @@
+.search-bar {}
+
+.search-form {
+    margin: 0.5em;
+    @include flex-center;
+
+    .input-text {
+        .MuiInputBase-input {
+            height: 0;
+        }
+    }
+
+    .trigger-btn {
+        margin-left: 0.5em;
+        @include flex-center;
+        height: 100%;
+
+        .btn-search {
+            border-radius: 15%;
+            border: none;
+            height: 100%;
+            font-size: 1em;
+            @include bold700;
+            padding-left: 1em;
+            padding-right: 1em;
+            // color: red;
+            background-color: $offWhite;
+        }
+    }
+    
+    @include for-tablet-layout {
+        margin: 2em;
+        .input-text {
+            width: 50%;
+            // .MuiInputBase-input {
+            // }
+        }
+        .trigger-btn {
+            margin-left: 1.5em;
+        }
+    }
+}

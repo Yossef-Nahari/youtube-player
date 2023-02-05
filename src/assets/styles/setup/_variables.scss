@@ -1,5 +1,7 @@
 // Colors
 
+$offWhite:rgb(237, 225, 225);
+
 // Padding
 $pad-8: 8px;
 $pad-5: 5px;
@@ -11,9 +13,9 @@ $pad-40:40px;
 $pad-80:80px;
 
 // main-content-wide
-$main-content-wide-s: 275px;
+$main-content-wide-s: 325px;
 $main-content-wide-m: 600px;
-$main-content-wide-l: 1100px;
+$main-content-wide-l: 960px;
 
 // Breakpoints
 $brake-point-s: $main-content-wide-s + 2 * $pad-8;
