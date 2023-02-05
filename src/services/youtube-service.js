@@ -18,6 +18,7 @@ async function onSearch(video) {
         if (!videos.length) return
         console.log('videos', videos)
         currVideosList = videos
+        console.log('currVideosList', currVideosList)
         // renderVideos(videos)
         // playVideo(videos[0].id)
     }

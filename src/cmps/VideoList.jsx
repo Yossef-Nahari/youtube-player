@@ -7,15 +7,16 @@ export class VideoList extends Component {
     state = {
         videos: null
     }
+    videoList
 
     componentDidMount() {
-        const { videos } = youtubeService.renderVideos
-        this.setState({ videos: [...videos] })
+        this.videoList = youtubeService.renderVideos()
+        this.setState({ videos: this.videoList })
     }
-
+    
     render() {
         const { videos } = this.state
-        if (!videos) return <h2>Loading...</h2>
+        if (videos === null) return <h2>Loading...</h2>
 
         return (
             <>
