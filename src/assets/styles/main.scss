@@ -1,16 +1,17 @@
 // Setup
-// @import "setup/variables";
-// @import "setup/functions";
-// @import "setup/mixins";
+@import "setup/variables";
+@import "setup/functions";
+@import "setup/mixins";
 
 // Basics
-// @import "basics/typography";
+@import "basics/typography";
+@import "basics/layout";
 @import "basics/base";
-// @import "basics/helpers";
-// @import "basics/layout";
-// @import "basics/modals";
-// @import "basics/animations";
+@import "basics/helpers";
+@import "basics/modals";
+@import "basics/animations";
 
 // Views
+@import "basics/animations";
 
 // Components

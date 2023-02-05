@@ -6,10 +6,11 @@ export function YoutubePlayer() {
 
     return (
         <>
-        <h1>From youtube-Player cmp</h1>
-        <MainVideo />
-        <SongList />
-        <SearchBar />
+            <main className="index-layout">
+                <MainVideo />
+                <SongList />
+                <SearchBar />
+            </main>
         </>
     )
 }
