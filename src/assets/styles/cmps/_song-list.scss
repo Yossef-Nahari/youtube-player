@@ -1,0 +1,36 @@
+.song-list {
+    display: grid;
+    overflow-y: scroll;
+    width: 40%;
+    border: solid black;
+
+    .song {
+        display: flex;
+        padding: 8px;
+
+        img {
+            width: 20%;
+        }
+
+        .btn {
+            &-play {
+                margin-left: auto;
+                display: flex;
+                align-items: flex-start;
+
+                button {
+                    margin: 1em;
+                    border: none;
+                    padding: 0.25em 1.25em 0.25em 1em;
+                    text-align: left;
+                    background:
+                        linear-gradient(-120deg, transparent 10%, #c31700 60%) top no-repeat,
+                        linear-gradient(300deg, transparent 10%, #c30000 60%) bottom no-repeat;
+                    background-size: 100% 50%;
+                }
+            }
+        }
+
+
+    }
+}
