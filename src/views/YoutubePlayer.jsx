@@ -8,7 +8,7 @@ export function YoutubePlayer() {
             <main className="index-layout">
                 <SearchBar />
                 <div className="videos-content">
-                    <VideoList />
+                    {/* <VideoList /> */}
                     <MainVideo />
                 </div>
             </main>
